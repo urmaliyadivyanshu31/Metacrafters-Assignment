@@ -47,7 +47,7 @@ async function main() {
 
   await consoleBalances(addresses);
 
-  const amount = { value: hre.ethers.utils.parseEther('1') };
+  const amount = { value: hre.ethers.utils.parseEther('0.001') };
   await contract.connect(from1).buyChai('from1', 'Very nice Chai Ji', amount);
   await contract.connect(from2).buyChai('from2', 'Very good Chai Ji', amount);
   await contract
